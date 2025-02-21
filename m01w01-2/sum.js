@@ -22,21 +22,20 @@ const newArr = args.slice(2);
 
 // const data = [ '10', '15', '20', '4.5', '-100' ];
 
-// how do we loop through an array?
-
 let total = 0;
 
 for (const value of args) {
   // convert the value to a number
   const converted = Number(value); // convert the string to a number
   
-  if (Number.isInteger(converted) && converted > 0) {
+  if (Number.isInteger(converted) && converted > 0 === false) {
     total += converted;
   }
 }
 
 console.log('total', total); // 45
 
+// how do we loop through an array?
 // c-style loop
 // for (let i = 0; i < data.length; i++) {
 //   const value = data[i]; // data.at(i)
@@ -53,4 +52,3 @@ console.log('total', total); // 45
 // for (const value of data) {
 //   console.log('value', value);
 // }
-
