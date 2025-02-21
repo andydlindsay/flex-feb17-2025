@@ -28,7 +28,7 @@ for (const value of args) {
   // convert the value to a number
   const converted = Number(value); // convert the string to a number
   
-  if (Number.isInteger(converted) && converted > 0 === false) {
+  if (Number.isInteger(converted) && converted > 0) {
     total += converted;
   }
 }
